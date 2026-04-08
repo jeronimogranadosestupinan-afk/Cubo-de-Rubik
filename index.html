@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cubo de Rubik 3D</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="topbar">
+        <h1>Cubo de Rubik 3D</h1>
+        <p>Arrastra para rotar el cubo. Usa los botones para girar caras.</p>
+      </header>
+
+      <section class="scene-wrap">
+        <div id="scene" class="scene">
+          <div id="cube" class="cube"></div>
+        </div>
+      </section>
+
+      <section class="controls">
+        <div class="moves" role="group" aria-label="Movimientos del cubo">
+          <button data-move="U">U</button>
+          <button data-move="D">D</button>
+          <button data-move="L">L</button>
+          <button data-move="R">R</button>
+          <button data-move="F">F</button>
+          <button data-move="B">B</button>
+        </div>
+        <button id="shuffle" class="shuffle">Mezclar</button>
+      </section>
+    </main>
+
+    <script src="main.js"></script>
+  </body>
+</html>
